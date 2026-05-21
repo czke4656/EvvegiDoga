@@ -4,8 +4,6 @@ body {
     font-size: 12px;
     color: black;
     text-align: justify;
-    padding: 0;
-    margin: 0;
 }
 
 main {
@@ -26,6 +24,12 @@ header {
 nav {
     grid-area: n;
     background-color: rgb(65, 129, 65);
+    
+}
+
+nav ul {
+    padding: 10px;
+    text-align: center;
 }
 
 nav li {
@@ -51,11 +55,14 @@ nav li:hover {
 
 article {
     grid-area: ar;
+    padding: 10px;
 }
 
 aside {
     grid-area: as;
     text-align: left;
+    max-width: 200px;
+    padding-left: 10px;
 }
 
 footer {
@@ -77,6 +84,7 @@ img {
     padding: 5px;
     border-style: solid;
     border-color: grey;
+    border-radius: 5px;
 }
 
 section {
@@ -96,5 +104,11 @@ div {
     "ar"
     "as"
     "f";
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+    body {
+        font-size: calc(10px + 2vw);
     }
 }

@@ -35,6 +35,18 @@ nav li {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+nav li:hover {
+    background-color: rgb(189, 60, 60);
 }
 
 article {
@@ -52,8 +64,8 @@ footer {
 
 h2 {
     font-weight: lighter;
-    font-family: ;
     padding-top: 20px;
+    grid-area: h2;
 }
 
 h3 {
@@ -67,10 +79,22 @@ img {
     border-color: grey;
 }
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 div {
     margin: 10px;
 }
 
-@media screen and (max-width:) {
-    
+@media screen and (max-width:600px) {
+    main{
+    grid-template-areas: 
+    "h"
+    "n"
+    "ar"
+    "as"
+    "f";
+    }
 }
